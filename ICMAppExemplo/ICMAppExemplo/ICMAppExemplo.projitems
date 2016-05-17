@@ -10,6 +10,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Faculdade.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Usuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FaculdadeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\UsuarioViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\FaculdadeDetailPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FaculdadesPage.xaml.cs">
       <DependentUpon>FaculdadesPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -23,10 +28,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)GettingStarted.Xamarin" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
-    <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\UsuariosPage.xaml">

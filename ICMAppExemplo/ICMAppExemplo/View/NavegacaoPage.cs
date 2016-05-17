@@ -23,6 +23,7 @@ namespace ICMAppExemplo.View
         {
             Title = "Intro. Comp. Móvel";
             BarTextColor = Color.White;
+            BarBackgroundColor = Color.FromHex("#3F51B5");
             PushAsync(new HomePage()).Wait();
         }
     }

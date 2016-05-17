@@ -3,16 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ICMAppExemplo.View.FaculdadesPage"
              Title="Faculdades">
-  <Grid>
-    <ListView>
+  <StackLayout>
+    <ListView
+      x:Name="lvFaculdades"
+      ItemsSource="{Binding Faculdades}"
+      >
       <ListView.ItemTemplate>
         <DataTemplate>
-          <StackLayout>
-            <Label Text="{Binding Nome}"/>
-            <Label Text="{Binding Email}"/>
-          </StackLayout>
+          <ViewCell>
+            <StackLayout
+            Spacing="0"
+            Padding="12">
+              <StackLayout
+              Orientation="Horizontal"
+              Spacing="0"
+              >
+                <Image
+                  WidthRequest="64"
+                  Aspect="AspectFit"
+                  Source="{Binding Foto}"/>
+                <Label Text="{Binding Nome}"/>
+              </StackLayout>
+              <Label Text="{Binding Local}"/>
+            </StackLayout>
+          </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-  </Grid>
+  </StackLayout>
 </ContentPage>
