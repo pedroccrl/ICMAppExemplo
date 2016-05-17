@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ICMAppExemplo.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace ICMAppExemplo
 	{
 		public App ()
 		{
-			
+            MainPage = NavegacaoPage.Instance;
 		}
 
 		protected override void OnStart ()
