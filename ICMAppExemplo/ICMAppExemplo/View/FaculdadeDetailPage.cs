@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
-using Xamarin.Forms.Maps;
 
 namespace ICMAppExemplo.View
 {
@@ -33,19 +32,8 @@ namespace ICMAppExemplo.View
             foto.SetBinding(Image.SourceProperty, "Foto");
             lblNome.SetBinding(Label.TextProperty, "Nome");
             lblLocal.SetBinding(Label.TextProperty, "Local");
-
-            var map = new Map(
-            MapSpan.FromCenterAndRadius(
-                    new Position(37, -122), Distance.FromMiles(0.3)))
-            {
-                IsShowingUser = true,
-                HeightRequest = 100,
-                WidthRequest = 960,
-                VerticalOptions = LayoutOptions.FillAndExpand
-            };
-            var stack = new StackLayout { Spacing = 0 };
-            stack.Children.Add(map);
-            content = stack;
+            Title = faculdade.Nome;
+            Content = new StackLayout();
         }
 	}
 }

@@ -25,7 +25,7 @@ namespace ICMAppExemplo.View
         private void LvFaculdades_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem == null) return;
-            NavegacaoPage.Instance.PushAsync(new FaculdadeDetailPage((Faculdade)e.SelectedItem)).Wait();
+            NavegacaoPage.Instance.PushAsync(new FaculdadeDetailPage((Faculdade)e.SelectedItem));
         }
     }
 }

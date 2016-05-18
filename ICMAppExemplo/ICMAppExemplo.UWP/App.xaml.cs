@@ -47,7 +47,6 @@ namespace ICMAppExemplo.UWP
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
-            Xamarin.FormsMaps.Init("UW0peICp3gljJyhqQKFZ~R3XF1I5BvWmWmkD4ujytTA~AoUOqpk2nJB-Wh7wH-9S-zaG-w6sygLitXugNOqm71wx_nc6WHIt6Lb29gyTU04X");
             if (Windows.Foundation.Metadata.ApiInformation.IsTypePresent("Windows.UI.ViewManagement.StatusBar"))
             {
                 var statusBar = Windows.UI.ViewManagement.StatusBar.GetForCurrentView();
