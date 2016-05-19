@@ -12,6 +12,7 @@ namespace ICMAppExemplo
 	{
 		public App ()
 		{
+			Aplicativo.Init();
             MainPage = NavegacaoPage.Instance;
 		}
 

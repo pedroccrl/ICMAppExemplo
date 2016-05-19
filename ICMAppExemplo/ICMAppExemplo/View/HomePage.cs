@@ -11,7 +11,6 @@ namespace ICMAppExemplo.View
         {
             Title = "Intro. Comp. Móvel";
 
-            Children.Add(new UsuariosPage());
             Children.Add(new FaculdadesPage());
         }
     }

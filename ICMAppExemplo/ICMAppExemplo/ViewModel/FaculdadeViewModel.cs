@@ -11,47 +11,17 @@ namespace ICMAppExemplo.ViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private ObservableCollection<Faculdade> _faculdades;
-
-        public ObservableCollection<Faculdade> Faculdades
-        {
-            get { return _faculdades; }
-            set { _faculdades = value; NotifyPropertyChanged("Faculdades"); }
-        }
+		public List<Faculdade> Faculdades 
+		{
+			get
+			{
+				return Aplicativo.Faculdades;
+			}
+		}
 
         public FaculdadeViewModel()
         {
-            Faculdades = new ObservableCollection<Faculdade>();
-            Faculdades.CollectionChanged += Faculdades_CollectionChanged;
-
-            Faculdades.Add(new Faculdade
-            {
-                Nome = "UFF",
-                Local = "Rio das Ostras",
-                Foto = "http://www.uff.br/dalicenca/images/stories/logos/uff.jpg"
-            });
-            Faculdades.Add(new Faculdade
-            {
-                Nome = "UFF",
-                Local = "Niteroi",
-                Foto = "http://www.uff.br/dalicenca/images/stories/logos/uff.jpg"
-            });
-            Faculdades.Add(new Faculdade
-            {
-                Nome = "UFF",
-                Local = "Volta Redonda",
-                Foto = "http://www.uff.br/dalicenca/images/stories/logos/uff.jpg"
-            });
-        }
-
-        private void Faculdades_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-        {
-            NotifyPropertyChanged("Faculdades");
-        }
-
-        public void NotifyPropertyChanged(string propertyName)
-        {
-            this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            
         }
 
     }

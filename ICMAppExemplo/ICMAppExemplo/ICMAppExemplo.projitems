@@ -25,6 +25,13 @@
       <DependentUpon>UsuariosPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ListViewCells\AlunosDataTemplate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\AdicionarAlunoPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Aplicativo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FaculdadeDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\FaculDetailPage.xaml.cs">
+      <DependentUpon>FaculDetailPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)GettingStarted.Xamarin" />
@@ -34,11 +41,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\FaculDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\FaculdadesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)View\ListViewCells\" />
   </ItemGroup>
 </Project>

@@ -23,7 +23,7 @@
                   WidthRequest="64"
                   Aspect="AspectFit"
                   Source="{Binding Foto}"/>
-                <Label Text="{Binding Nome}"/>
+                <Label Text=""/>
               </StackLayout>
               <Label Text="{Binding Local}"/>
             </StackLayout>

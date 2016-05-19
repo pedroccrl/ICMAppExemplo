@@ -4,7 +4,8 @@
              x:Class="ICMAppExemplo.View.UsuariosPage"
              Title="Usuários">
 	<StackLayout>
-    <ListView x:Name="ListViewUsuarios" ItemsSource="{Binding Usuarios}"
+    <ListView x:Name="ListViewUsuarios" 
+    			ItemsSource="{Binding Usuarios}"
               HasUnevenRows="True">
       <ListView.ItemTemplate>
         <DataTemplate>

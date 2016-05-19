@@ -17,6 +17,8 @@ namespace ICMAppExemplo.View
 			InitializeComponent ();
             ViewModel = new UsuarioViewModel();
 
+
+
             BindingContext = ViewModel;
 		}
 	}

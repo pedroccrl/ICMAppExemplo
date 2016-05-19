@@ -19,13 +19,16 @@ namespace ICMAppExemplo.View
             ViewModel = new FaculdadeViewModel();
             lvFaculdades.ItemSelected += LvFaculdades_ItemSelected;
             BindingContext = ViewModel;
-            
+			Label l;
+
 		}
 
         private void LvFaculdades_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem == null) return;
-            NavegacaoPage.Instance.PushAsync(new FaculdadeDetailPage((Faculdade)e.SelectedItem));
+			Faculdade f = (Faculdade)e.SelectedItem;
+			Faculdade f2 = Aplicativo.Faculdades.Find(fa=> fa.Nome == f.Nome);
+			NavegacaoPage.Instance.PushAsync(new FaculdadeDetailPage(f2));
         }
     }
 }
