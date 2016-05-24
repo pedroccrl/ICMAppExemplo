@@ -101,7 +101,7 @@ namespace ICMAppExemplo.View
 			});
 
 			lvAlunos.ItemsSource = faculdade.Alunos;
-			lvAlunos.ItemTemplate = alunosDataTemplate;
+            lvAlunos.ItemTemplate = new DataTemplate(typeof(AlunosDataTemplate));
 //			lvAlunos.SetBinding(ListView.ItemsSourceProperty,"Alunos");
 
 			ScrollView scroll = new ScrollView();
@@ -124,7 +124,7 @@ namespace ICMAppExemplo.View
 			}
 			scroll.Content = sAlunos;
 			grid.Children.Add(scroll,0,0);
-			if (Device.OS != TargetPlatform.Android)
+			if (Device.OS != TargetPlatform.iOS)
 			{
 				grid.Children.Add(map,0,1);
 			}

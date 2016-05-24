@@ -20,7 +20,7 @@ namespace ICMAppExemplo.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
+            Xamarin.FormsMaps.Init("2vMptUP2OAmkGShUjALw~SrMuB-Kd-79zozdAOlaqkQ~Ajrf8iOj_smhgEVtKnZgZWDgjV3SKpHmxoTjyj_4ZlCFgizBeet7Og8IFg4FZkY4");
             LoadApplication(new ICMAppExemplo.App());
         }
     }
