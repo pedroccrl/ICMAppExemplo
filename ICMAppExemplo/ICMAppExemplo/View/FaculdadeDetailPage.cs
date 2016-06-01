@@ -124,7 +124,7 @@ namespace ICMAppExemplo.View
 			}
 			scroll.Content = sAlunos;
 			grid.Children.Add(scroll,0,0);
-			if (Device.OS != TargetPlatform.iOS)
+			if (Device.OS == TargetPlatform.iOS)
 			{
 				grid.Children.Add(map,0,1);
 			}
